@@ -50,10 +50,13 @@ def set_seed(seed: int = 42):
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
 
 
 def get_device():
-    # Apple Silicon (MPS) if available; else CPU
+    if torch.cuda.is_available():
+        return torch.device("cuda")
     if torch.backends.mps.is_available() and torch.backends.mps.is_built():
         return torch.device("mps")
     return torch.device("cpu")
