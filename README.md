@@ -1,6 +1,6 @@
 # DeepFake Engine v2
 
-DeepFake Engine v2 is a minimal end-to-end deepfake detection pipeline that allows you to train your own model and run inference on images (and extend to videos). It is designed to work on macOS (Apple Silicon / MPS), CUDA-enabled GPUs, or CPU, and is suitable for small datasets and rapid experimentation.
+DeepFake Engine v2 is a minimal end-to-end deepfake detection pipeline that allows you to train your own model and run inference on images (and extend to videos). It is designed to work on macOS (Apple Silicon / MPS), CUDA-enabled GPUs, or CPU, and is suitable for small datasets and rapid experimentation
 
 ---
 
