@@ -28,6 +28,7 @@ The system follows a simple but effective forensic pipeline:
 5. **Inference**
    - Single-image inference returns fake/real with confidence.
    - Video inference can be extended by aggregating frame-level predictions.
+   - Temporal Video Inference: The system performs frame-level deepfake detection on sampled video frames and aggregates predictions over time to produce both a video-level decision and timestamped manipulated segments via temporal smoothing and thresholding.
 
 ---
 
