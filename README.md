@@ -30,6 +30,9 @@ The system follows a simple but effective forensic pipeline:
    - Video inference can be extended by aggregating frame-level predictions.
    - Temporal Video Inference: The system performs frame-level deepfake detection on sampled video frames and aggregates predictions over time to produce both a video-level decision and timestamped manipulated segments via temporal smoothing and thresholding.
 
+6.**Multi-Face Support**
+  - The system supports videos and images containing multiple faces. Each detected face is tracked as a separate identity, classified independently as real or fake, and assigned its own confidence score and temporal manipulation segments. This allows accurate identification of which specific person is manipulated in multi-person or split-screen videos.
+
 ---
 
 ## Requirements
